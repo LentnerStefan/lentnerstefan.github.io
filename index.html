@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Stefan Lentner</title>
+    <style>
+        /* CSS Reset */
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      :root {
+        --primary: #2b5f8a;
+        --secondary: #6c757d;
+        --light: #f8f9fa;
+        --dark: #343a40;
+        --accent: #4a90e2;
+      }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: var(--dark);
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+        line-height: 1.6;
+      }
+      header {
+        text-align: center;
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+      }
+      h1 {
+        color: var(--primary);
+        margin-bottom: 0.2rem;
+      }
+      h2 {
+        color: var(--primary);
+        border-bottom: 2px solid var(--accent);
+        padding-bottom: 0.3rem;
+        margin-top: 1.5rem;
+      }
+      h3 {
+        color: var(--primary);
+        margin-top: 1rem;
+      }
+      .subtitle {
+        color: var(--secondary);
+        font-weight: normal;
+      }
+      .experience,
+      .education {
+        margin-bottom: 1.5rem;
+      }
+      .job-title,
+      .degree {
+        font-weight: bold;
+      }
+      .company,
+      .school {
+        font-style: italic;
+      }
+      .date {
+        color: var(--secondary);
+        font-size: 0.9rem;
+      }
+      ul {
+        margin-top: 0.5rem;
+        list-style-position: inside;
+        padding-left: 0;
+        margin-left: 0;
+      }
+      .skills-category {
+        margin-top: 1rem;
+      }
+      .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+      }
+      .skill {
+        background: var(--light);
+        padding: 0.3rem 0.6rem;
+        border-radius: 3px;
+      }
+
+      .skills-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem 2rem;
+      }
+      section h2 + .skills-category {
+        margin-top: 0;
+      }
+      .skills-category {
+        margin-top: 0.5rem;
+      }
+      .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.3rem 0.6rem;
+        margin-top: 0.2rem;
+      }
+      .skill {
+        background: var(--light);
+        padding: 0.2rem 0.5rem;
+        border-radius: 4px;
+        font-size: 0.85rem;
+        white-space: nowrap;
+      }
+      .skills-category h3 {
+        margin-bottom: 0.3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Stefan Lentner</h1>
+      <p class="subtitle">
+        JavaScript Engineer • TypeScript &amp; Frontend Expert
+      </p>
+      <p>
+        📧 stefan.lentner@gmail.com • 📞 +33 6 23 99 18 77 • 🏠 4 rue Etex,
+        75018 Paris
+      </p>
+    </header>
+    <section>
+      <h2>About Me</h2>
+      <p style="margin-top: 0.5rem">
+        JavaScript engineer with over 10 years of experience and a strong
+        frontend and TypeScript background. I've led architectural migrations,
+        mentored engineers, and created a frontend community within an
+        engineering organization. Comfortable both coding and coordinating
+        across teams, I enjoy working closely with product and design to build
+        polished user experiences.
+      </p>
+    </section>
+    <section>
+      <h2>Experience</h2>
+      <div class="experience">
+        <h3>
+          <span class="job-title">Founding Engineer</span> |
+          <span class="company">Jaylo</span>
+        </h3>
+        <p class="date">Feb 2024 - Present | Paris, France</p>
+        <ul>
+          <li>
+            Built high-performance mobile/backend solution for detecting custom
+            visual markers (QR-like).
+          </li>
+          <li>
+            Developed React Native app with C++ modules to process 4K video at
+            30 FPS.
+          </li>
+          <li>
+            Designed and deployed backend image-processing pipeline (AWS •
+            RabbitMQ • Terraform).
+          </li>
+        </ul>
+      </div>
+      <div class="experience">
+        <h3>
+          <span class="job-title">Core Engineer</span> |
+          <span class="company">PlayPlay</span>
+        </h3>
+        <p class="date">Mar 2023 - Jan 2024</p>
+        <ul>
+          <li>
+            Led 6-month company-wide migration to Vue 3, coordinating with 5
+            product/tech teams.
+          </li>
+          <li>
+            Architected and rewrote core shared components used across the app.
+          </li>
+          <li>
+            Organized front-end community: monthly meetings, shared backlog,
+            autonomous taskforces reporting progress.
+          </li>
+          <li>
+            Halved app load time through performance optimizations.
+          </li>
+        </ul>
+      </div>
+      <div class="experience">
+        <h3>
+          <span class="job-title">Fullstack Developer</span> |
+          <span class="company">PlayPlay</span>
+        </h3>
+        <p class="date">Sep 2021 - Feb 2023</p>
+        <ul>
+          <li>
+            Built flagship video editing features:
+            <a
+              href="https://www.youtube.com/watch?v=E17-te7efe0"
+              target="_blank"
+              >Dynamic Elements</a
+            >
+            &amp; Cutaway Shots (Vue.js • TypeScript).
+          </li>
+          <li>
+            Worked closely with design/product to craft an intuitive editing
+            experience.
+          </li>
+        </ul>
+      </div>
+      <div class="experience">
+        <h3>
+          <span class="job-title">Technical Team Lead</span> |
+          <span class="company">Ornikar</span>
+        </h3>
+        <p class="date">Jul 2019 - Aug 2020</p>
+        <ul>
+          <li>
+            Led a team of 5 engineers, ensuring delivery of robust, scalable
+            frontend code.
+          </li>
+          <li>
+            Conducted technical interviews and improved team CI pipelines and
+            code quality.
+          </li>
+          <li>
+            Projects:
+            <ul>
+              <li>
+                Migrated Redux to Apollo GraphQL stack (React • Node • Apollo).
+              </li>
+              <li>Internationalized marketing site (React • react-intl).</li>
+              <li>Rewrote internal libraries in TypeScript (React • Jest).</li>
+              <li>
+                Led timezone handling revamp for cross-country scheduling
+                (date-fns-tz).
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="experience">
+        <h3>
+          <span class="job-title">Frontend Developer</span> |
+          <span class="company">Ornikar</span>
+        </h3>
+        <p class="date">Apr 2018 - Jun 2019</p>
+        <ul>
+          <li>
+            Created internal back-office tools (React • Redux • Ant Design).
+          </li>
+          <li>
+            Built a native instructor app with offline-first features (React
+            Native • Expo).
+          </li>
+          <li>
+            Reengineered marketing site with new design system (React •
+            Next.js).
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <h2>Education</h2>
+      <div class="education">
+        <h3>
+          <span class="degree">Master of Engineering (M.Eng.)</span> |
+          <span class="school"
+            >ENSEA - Ecole nationale supérieure de l'Electronique et de ses
+            Applications</span
+          >
+        </h3>
+        <p class="date">
+          2011 - 2014 | Electrical &amp; Electronic Engineering
+        </p>
+      </div>
+    </section>
+    <section>
+      <h2>Skills</h2>
+
+      <div class="skills-section">
+        <div class="skills-category">
+          <h3>Frontend</h3>
+          <div class="skills">
+            <span class="skill">React / Next / Remix</span>
+            <span class="skill">React Native / Expo</span>
+            <span class="skill">Vue</span>
+            <span class="skill">Zustand / Redux</span>
+            <span class="skill">Storybook</span>
+            <span class="skill">Cypress / Jest</span>
+            <span class="skill">Vite</span>
+          </div>
+        </div>
+        <div class="skills-category">
+          <h3>Collaboration &amp; DX</h3>
+          <div class="skills">
+            <span class="skill">Design Systems</span>
+            <span class="skill">Figma</span>
+            <span class="skill">Jira / Notion</span>
+            <span class="skill">RFC Writing</span>
+            <span class="skill">Team Mentoring</span>
+            <span class="skill">Product Collaboration</span>
+          </div>
+        </div>
+        <div class="skills-category">
+          <h3>Languages &amp; Fundamentals</h3>
+          <div class="skills">
+            <span class="skill">JavaScript / TypeScript</span>
+            <span class="skill">Python</span>
+            <span class="skill">SQL</span>
+            <span class="skill">C++</span>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <h3>Backend &amp; APIs</h3>
+          <div class="skills">
+            <span class="skill">Node</span>
+            <span class="skill">Express.js</span>
+            <span class="skill">Zod</span>
+            <span class="skill">GraphQL / Apollo</span>
+            <span class="skill">DrizzleORM</span>
+          </div>
+        </div>
+        <div class="skills-category">
+          <h3>Cloud &amp; DevOps</h3>
+          <div class="skills">
+            <span class="skill">AWS / Terraform</span>
+            <span class="skill">Docker</span>
+            <span class="skill">GitHub Actions</span>
+            <span class="skill">RabbitMQ</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
