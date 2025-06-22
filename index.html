@@ -115,6 +115,35 @@
       .skills-category h3 {
         margin-bottom: 0.3rem;
       }
+      
+      @media print {
+        @page {
+          size: A4;
+          margin: 1.5cm;
+        }
+
+        body {
+          color: #000;
+          background: #fff;
+          font-size: 11pt;
+          print-color-adjust: exact;
+        }
+
+        header {
+          page-break-after: avoid;
+        }
+
+        h2,
+        h3 {
+          page-break-after: avoid;
+          page-break-inside: avoid;
+        }
+
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
     </style>
   </head>
   <body>
